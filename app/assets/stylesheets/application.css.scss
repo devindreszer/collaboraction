@@ -18,10 +18,16 @@
 
 @import 'foundation-icons';
 
+$primary-color: #EC2C22;
+
 .body-content {
   padding: 2rem 0 0 0;
 }
 
 footer {
   margin: 3em;
+}
+
+.site-name {
+  color: $primary-color;
 }
