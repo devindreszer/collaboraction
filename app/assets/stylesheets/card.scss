@@ -1,21 +1,41 @@
+$font-color-dark: #343636;
+$font-color-light: #717675;
+
 .card {
   box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  border-radius: 0.5rem;
+  padding: 1rem;
+
+  .card-image {
+  }
 
   .card-title {
-    margin: -1px 0 0 0;
-    background: rgba(0, 0, 0, 0.75);
-    padding: 1rem;
 
     h3 {
-      color: white;
+      color: $font-color-dark;
+    }
+  }
+
+  .card-sponsor {
+
+    p {
+      font-size: 0.9rem;
+      color: $font-color-light;
+    }
+  }
+
+  .card-description {
+
+    p {
+      font-size: 0.8rem;
+      color: $font-color-light;
     }
   }
 
   .card-info {
-    padding: 1rem 1rem 0 1rem;
-
-    p {
-      color: rgba(0, 0, 0, 0.75);
+    td {
+      font-size: 0.8rem;
+      color: $font-color-light;
     }
   }
 }

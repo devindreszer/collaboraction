@@ -1,5 +1,18 @@
 <div class="card">
   <div class="card-image"><%= image_tag(project.image, alt: project.title) %></div>
   <div class="card-title"><h3><%= project.title %></h3></div>
-  <div class="card-info"></div>
+  <div class="card-sponsor"><p>Sponsored by: <%= User.find(project.user_id).username %></p></div>
+  <div class="card-description"><p><%= project.description[0..200] %></p></div>
+  <div class="card-info">
+    <table>
+      <tbody>
+        <tr>
+          <td><%= project.sign_ups.count %></td>
+        </tr>
+        <tr>
+          <td>Joined</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>

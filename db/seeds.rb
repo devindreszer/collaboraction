@@ -3,6 +3,7 @@ User.delete_all
 
 # User
 devin = User.create!(
+  username: "devin",
   email: "devin@example.com",
   password: "password"
 )
