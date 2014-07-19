@@ -1,5 +1,7 @@
 $font-color-dark: #343636;
 $font-color-light: #717675;
+$progress-bar-bg: #ECF5F4;
+$primary-color: #05A45E;
 
 .card {
   box-shadow: 0 3px 6px rgba(0,0,0,.25);
@@ -10,7 +12,15 @@ $font-color-light: #717675;
   .card-image {
     height: 15rem;
     width: 100%;
-    background: black;
+    overflow: hidden;
+
+    img {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
   }
 
   .card-title {
@@ -37,10 +47,29 @@ $font-color-light: #717675;
     }
   }
 
+  .card-progress-bar {
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    background: $progress-bar-bg;
+  }
+
+  .card-progress {
+    margin-top: -0.5rem;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    background: $primary-color;
+  }
+
   .card-info {
-    td {
-      font-size: 0.8rem;
-      color: $font-color-light;
+    table {
+      width: 100%;
+      td {
+        font-size: 0.8rem;
+        color: $font-color-light;
+      }
+      td:last-child {
+        text-align: right;
+      }
     }
   }
 }
