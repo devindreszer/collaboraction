@@ -25,6 +25,13 @@
         <section class="top-bar-section">
           <ul class="right">
             <% if user_signed_in? %>
+
+              <li>
+                <%= link_to projects_path(sponsored: true), title: "sponsored-projects" do %>
+                  <i class="fi-thumbnails"></i> Sponsored Projects
+                <% end %>
+              </li>
+
               <li class="has-dropdown">
                 <%= link_to "#" do %>
                   <i class="fi-torso"></i> <%= current_user.username %>

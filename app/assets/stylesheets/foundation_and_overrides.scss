@@ -62,7 +62,7 @@ $body-font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial,
 // $default-float: left;
 
 // We use these as default colors throughout
-$primary-color: #EC2C22;
+$primary-color: #05A45E;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -1192,12 +1192,12 @@ $topbar-bg-color: #ECF5F4;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
-$topbar-height: 45px;
+$topbar-height: 55px;
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: $font-weight-normal;
-$topbar-title-font-size: rem-calc(22);
+$topbar-title-font-size: rem-calc(24);
 
 // Style the top bar dropdown elements
 $topbar-dropdown-bg: #ECF5F4;
@@ -1214,7 +1214,7 @@ $topbar-link-color-hover: #343636;
 $topbar-link-color-active: #343636;
 $topbar-link-color-active-hover: #343636;
 // $topbar-link-weight: $font-weight-normal;
-// $topbar-link-font-size: rem-calc(13);
+$topbar-link-font-size: rem-calc(14);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
 $topbar-link-bg-color-hover: #555555;

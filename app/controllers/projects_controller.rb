@@ -2,7 +2,11 @@ class ProjectsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create]
 
   def index
-    @projects = Project.all
+    if params[:sponsored]
+      @projects = current_user.projects
+    else
+      @projects = Project.all
+    end
   end
 
   def show
