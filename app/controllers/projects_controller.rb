@@ -14,7 +14,7 @@ class ProjectsController < ApplicationController
   end
 
   def create
-    @project = Project.new(article_params)
+    @project = Project.new(project_params)
     @project.user_id = current_user.id
     if @project.save
       flash[:notice] = "Posted #{@project.title}"
@@ -23,6 +23,12 @@ class ProjectsController < ApplicationController
       flash.now[:alert] = @project.errors.full_messages.join(', ')
       render :new
     end
+  end
+
+  private
+
+  def project_params
+    params.require(:project).permit(:title, :url, :description)
   end
 
 end
