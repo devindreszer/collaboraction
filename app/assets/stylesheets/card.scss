@@ -1,0 +1,21 @@
+.card {
+  box-shadow: 0 3px 6px rgba(0,0,0,.25);
+
+  .card-title {
+    margin: -1px 0 0 0;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 1rem;
+
+    h3 {
+      color: white;
+    }
+  }
+
+  .card-info {
+    padding: 1rem 1rem 0 1rem;
+
+    p {
+      color: rgba(0, 0, 0, 0.75);
+    }
+  }
+}

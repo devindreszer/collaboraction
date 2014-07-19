@@ -1,1 +1,7 @@
-<li><%= project.title%></li>
+<li class="project-list">
+  <%= link_to project_path(project.id) do %>
+
+    <%= render "shared/card", project: project %>
+
+  <% end %>
+</li>
