@@ -12,40 +12,59 @@
     <%= csrf_meta_tags %>
   </head>
 
-  <div class="contain-to-grid">
-    <nav class="top-bar" data-topbar>
-      <ul class="title-area">
-        <li class= "name">
-          <h1><%= link_to root_path do %>collaboraction<% end %></h1>
-        </li>
-        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-      </ul>
-      <section class="top-bar-section">
-        <ul class="right">
-          <% if user_signed_in? %>
-            <li class="has-dropdown">
-              <%= link_to "#" do %>
-                <i class="fi-torso"></i> <%= current_user.username %>
-              <% end %>
-              <ul class="dropdown">
-                <li><%= link_to 'Edit profile', edit_user_registration_path %></li>
-                <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
-              </ul>
-            </li>
-          <% else %>
-            <li><%= link_to "Sign up", new_user_registration_path, class: "small button radius" %></li>
-            <li><%= link_to "Login", new_user_session_path %></li>
-          <% end %>
-        </ul>
-      </section>
-    </nav>
-  </div>
-
   <body>
+
+    <div class="contain-to-grid">
+      <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+          <li class= "name">
+            <h1><%= link_to root_path do %>collaboraction<% end %></h1>
+          </li>
+          <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+        </ul>
+        <section class="top-bar-section">
+          <ul class="right">
+            <% if user_signed_in? %>
+              <li class="has-dropdown">
+                <%= link_to "#" do %>
+                  <i class="fi-torso"></i> <%= current_user.username %>
+                <% end %>
+                <ul class="dropdown">
+                  <li><%= link_to 'Edit profile', edit_user_registration_path %></li>
+                  <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+                </ul>
+              </li>
+            <% else %>
+              <li><%= link_to "Sign up", new_user_registration_path, class: "small button radius" %></li>
+              <li><%= link_to "Login", new_user_session_path %></li>
+            <% end %>
+          </ul>
+        </section>
+      </nav>
+    </div>
+
+    <% if request.path == "/" %>
+      <%= render partial: "layouts/banner" %>
+    <% end %>
+
     <div class="body-content row">
       <div class="small-12 small-centered columns">
+
+      <% if flash[:notice].present? %>
+        <p class="notice text-center banner-text"><%= flash[:notice] %></p>
+      <% end %>
+
+      <% if flash[:alert].present? %>
+        <p class="alert text-center banner-text"><%= flash[:alert] %></p>
+      <% end %>
+
       <%= yield %>
+
       </div>
     </div>
+
+    <footer id="footer", class="text-center">
+      <h3>collaboraction</h3>
+    </footer>
   </body>
 </html>
