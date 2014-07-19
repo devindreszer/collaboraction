@@ -68,7 +68,7 @@ project6 = djeneba.projects.create(
 project7 = li.projects.create(
   title: 'Volunteer with kids with disabilities',
   target: 20,
-  image: 'disabilities-china.jpg' ,
+  image: 'Disabilities.png' ,
   is_sponsored: false,
   description: "At Beijing Fangshan Liangxiang No. 2 Secondary School, we are taking time to volunteer with disabled students. Near our school, there’s an orphanage for kids who are blind or have other disabilities. Unfortunately, in China, many disabled children are given up by their families. These children are very lovable and many are very smart, but they need special attention to be successful. Around the world, there are many centers for children with disabilities. We want to get you and your classroom to volunteer at a place like this, and then let us know about your experience. Our hope is that we can share how special it is to be a part of these kids’ lives, and then others will be a part of helping them succeed. Join us!")
 
