@@ -13,6 +13,6 @@
   <% if user_signed_in? && (current_user.sign_ups.find_by(project_id: @project.id).present? || current_user.id == @project.user_id) %>
     <%= render "user", joined_users: @joined_users %>
   <% else %>
-    <%= link_to "Sign Up", project_sign_ups_path(@project), method: :post, title: "Sign Up", class: "small button right radius" %>
+    <%= link_to "Join this Project", project_sign_ups_path(@project), method: :post, title: "join", class: "small button right radius" %>
   <% end %>
 </div>
