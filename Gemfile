@@ -38,3 +38,16 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# Devise ruby gem for user authentication
+gem 'devise'
+
+# to deploy to heroku
+group :production do
+  gem 'rails_12factor'
+end
+
+# add foundation to file directly
+gem 'foundation-rails'
+
+# add foundation icons
+gem 'foundation-icons-sass-rails'
