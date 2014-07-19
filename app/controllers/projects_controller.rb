@@ -17,6 +17,11 @@ class ProjectsController < ApplicationController
 
   def show
     @project = Project.find(params[:id])
+    @joined_users = []
+    @project.sign_ups.map(&:user_id).each do |user_id|
+      @joined_users << User.find(user_id)
+    end
+    @joined_users
   end
 
   def new
