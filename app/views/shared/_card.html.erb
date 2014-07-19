@@ -1,16 +1,27 @@
-<div class="card">
+<% if project.is_sponsored %>
+  <div class="card sponsored">
+<% else %>
+  <div class="card">
+<% end %>
+
   <div class="card-image"><%= image_tag(project.image, alt: project.title) %></div>
   <div class="card-title"><h3><%= project.title %></h3></div>
-  <div class="card-sponsor"><p>Proposed by: <%= User.find(project.user_id).username %></p></div>
+
+  <% if project.is_sponsored %>
+    <div class="card-sponsor"><p>Sponsored by: Gates Foundation</p></div>
+  <% else %>
+    <div class="card-sponsor"><p>Proposed by: <%= User.find(project.user_id).username %></p></div>
+  <% end %>
+
   <div class="card-description"><p><%= project.description[0..100] %>... </p></div>
   <div class="card-progress-bar"></div>
-  <div class="card-progress" style="width:<%= (project.sign_ups.count) / 20.0 * 100 %>%"></div>
+  <div class="card-progress" style="width:<%= (project.sign_ups.count.to_f) / project.target * 100 %>%"></div>
   <div class="card-info">
     <table>
       <tbody>
         <tr>
           <td><%= project.sign_ups.count %></td>
-          <td>20</td>
+          <td><%= project.target %></td>
         </tr>
         <tr>
           <td>Joined</td>
