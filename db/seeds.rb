@@ -6,7 +6,7 @@ eyob = User.create!(email: "eyob@example.com",username: 'EyobBekele',password: "
 
 sara = User.create!(email: "sara@example.com",username: 'SaraKrakauer',password: "password")
 
-brad = User.create!(email: "brad@example.com",username: 'BradParker',password: "password")
+chad = User.create!(email: "chad@example.com",username: 'ChadParker',password: "password")
 
 yoshi = User.create!(email: "yoshi@example.com",username: 'YoshiSuzuki',password: "password")
 
@@ -18,7 +18,7 @@ li = User.create!(email: "li@example.com",username: 'LiWei',password: "password"
 
 jani = User.create!(email: "jani@example.com",username: 'JaniPlaatje',password: "password")
 
-tommie = User.create!(email: "tommie@example.com",username: 'TommieHamaluba',password: "password")
+jonny = User.create!(email: "jonny@example.com",username: 'JonnyHamaluba',password: "password")
 
 
 
@@ -37,7 +37,7 @@ project2 = sara.projects.create(
   is_sponsored: false,
   description: 'In our 5th and 6th grade Social Studies class, we have been studying child labor. We want you to have your students make a pledge to “check the tag before you get the bag.” This means that people should find out which companies use child labor, and make sure to buy from companies that have fair labor laws. Around the world, millions of kids don’t have the opportunity to go to school because they have to work. This is wrong. Everyone deserves the right to have a proper education and enjoy their childhood. Please join our project and fight child labor! Innovation Academy wants to work with YOU. We hope to get schools from every continent involved in this project, because this is a global issue that everyone should care about.')
 
-project3 = brad.projects.create(
+project3 = chad.projects.create(
   title: 'Organize a fundraiser to get solar panels for our school',
   target: 10,
   image: 'solar.png' ,
@@ -79,12 +79,12 @@ project8 = jani.projects.create(
   is_sponsored: false,
   description: "We are an 11th grade class at Cathcart High School in Johannesburg, South Africa, and we are working to re-purpose old furniture or appliances. Why waste these resources and see them end up in a landfill? In our class, we learned about how landfills actually lead to global warming, because methane is generated in massive quantities and small leaks are dangerous. Instead of seeing these old products end up in the trash, you can use your creativity to think of new uses for them. We’d love to see what you come up with!  As you can see in our photo, one of our favorite projects was turning a toilet into a planter. We’ve also used old stereos for alternative bookshelves, repurposed a couch into a fishtank, and many more interesting projects. Please try it out. You’ll be surprised at how a little innovation can lead to new discoveries.")
 
-project9 = tommie.projects.create(
+project9 = jonny.projects.create(
   title: 'Raise money for mosquito nets to prevent malaria',
   target: 40,
   image: 'http://www.net4nets.net/images/Net4Nets_Main.jpg' ,
   is_sponsored: false,
-  description: "My name is Tommie, and I am the advisor for our Malaria Prevention Club here at Gaborone Secondary School in Botswana. We designed our own website, Net4Nets.net, and we are using this to raise money to buy mosquito nets for people in need. In particular, children and pregnant women are most at risk when it comes to Malaria. While Malaria is a treatable disease, it’s better to keep people from getting it in the first place, because it can be fatal in some circumstances. For every $10 we raise, we can purchase one treated mosquito net. We buy these and then we travel to high risk areas in the north part of our country to distribute them to people in need. It’s only $10, but that money could save a life. We have already partnered with a school in Canada, and we are looking for more schools to join our efforts in fundraising. If you participate, we will send you updates and photos from our trip distributing the nets.")
+  description: "My name is Jonny, and I am the advisor for our Malaria Prevention Club here at Gaborone Secondary School in Botswana. We designed our own website, Net4Nets.net, and we are using this to raise money to buy mosquito nets for people in need. In particular, children and pregnant women are most at risk when it comes to Malaria. While Malaria is a treatable disease, it’s better to keep people from getting it in the first place, because it can be fatal in some circumstances. For every $10 we raise, we can purchase one treated mosquito net. We buy these and then we travel to high risk areas in the north part of our country to distribute them to people in need. It’s only $10, but that money could save a life. We have already partnered with a school in Canada, and we are looking for more schools to join our efforts in fundraising. If you participate, we will send you updates and photos from our trip distributing the nets.")
 
 users = User.all
 projects = Project.all
