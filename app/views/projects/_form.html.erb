@@ -1,0 +1,18 @@
+<%= form_for project do |f| %>
+  <div>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div>
+    <%= f.label :image %>
+    <%= f.url_field :image %>
+  </div>
+
+  <div>
+    <%= f.label :description %>
+    <%= f.url_field :description %>
+  </div>
+
+  <%= f.submit "Submit Project", class: "small button right" %>
+<% end %>
