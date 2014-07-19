@@ -4,6 +4,12 @@ class ProjectsController < ApplicationController
   def index
     if params[:sponsored]
       @projects = current_user.projects
+    elsif params[:joined]
+      @projects = []
+      current_user.sign_ups.map(&:project_id).each do |id|
+        @projects << Project.find(id)
+      end
+      @projects
     else
       @projects = Project.all
     end

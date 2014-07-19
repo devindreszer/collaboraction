@@ -27,8 +27,14 @@
             <% if user_signed_in? %>
 
               <li>
+                <%= link_to projects_path(joined: true), title: "joined-projects" do %>
+                  <i class="fi-thumbnails"></i> Joined Projects
+                <% end %>
+              </li>
+
+              <li>
                 <%= link_to projects_path(sponsored: true), title: "sponsored-projects" do %>
-                  <i class="fi-thumbnails"></i> Sponsored Projects
+                  <i class="fi-list-thumbnails"></i> Sponsored Projects
                 <% end %>
               </li>
 
