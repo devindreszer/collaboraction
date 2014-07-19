@@ -53,37 +53,93 @@ We are a 9th grade science class, and we came up with this idea as part of our s
 project3 = brad.projects.create(
   title: 'Organize a fundraiser to get solar panels for our school',
   image: 'solar.png' ,
-  description: 'This is the coolest project ever')
+  description: 'What should your class do?
+Organize a big event at your school where everyone picks up trash from the ground.
+
+Why would this make the world a better place?
+Even if each student picks up a single piece of trash, it could have a big impact on cleaning up that environment.
+
+Who are the students proposing this project?
+We are a 9th grade science class, and we came up with this idea as part of our study of environmental systems. Did you know that animals can choke on a single piece of trash and die? Plants are also greatly affected by the toxins in plastics. If one plant or animal is affected, it can have major implications for other species as well.
+')
 
 project4 = yoshi.projects.create(
   title: 'Make our gardens thrive by making our own fertilizer',
   image: 'fertilizer-japan.png' ,
-  description: 'This is the coolest project ever')
+  description: 'What should your class do?
+Organize a big event at your school where everyone picks up trash from the ground.
+
+Why would this make the world a better place?
+Even if each student picks up a single piece of trash, it could have a big impact on cleaning up that environment.
+
+Who are the students proposing this project?
+We are a 9th grade science class, and we came up with this idea as part of our study of environmental systems. Did you know that animals can choke on a single piece of trash and die? Plants are also greatly affected by the toxins in plastics. If one plant or animal is affected, it can have major implications for other species as well.
+')
 
 project5 = mary.projects.create(
   title: 'Send our support to Ukraine',
   image: 'http://innovationonearth.files.wordpress.com/2014/04/butterflies.png?w=538&h=441' ,
-  description: 'This is the coolest project ever')
+  description: 'What should your class do?
+Organize a big event at your school where everyone picks up trash from the ground.
+
+Why would this make the world a better place?
+Even if each student picks up a single piece of trash, it could have a big impact on cleaning up that environment.
+
+Who are the students proposing this project?
+We are a 9th grade science class, and we came up with this idea as part of our study of environmental systems. Did you know that animals can choke on a single piece of trash and die? Plants are also greatly affected by the toxins in plastics. If one plant or animal is affected, it can have major implications for other species as well.
+')
 
 project6 = djeneba.projects.create(
   title: 'Start an AIDS Awareness Club at our schools',
   image: 'https://lh5.googleusercontent.com/-HD4Bm1QMHl8/RtH-U6p3YPI/AAAAAAAABjc/RnpmSoGSx2I/w357-h476-no/IMG_0654.JPG' ,
-  description: 'This is the coolest project ever')
+  description: 'What should your class do?
+Organize a big event at your school where everyone picks up trash from the ground.
+
+Why would this make the world a better place?
+Even if each student picks up a single piece of trash, it could have a big impact on cleaning up that environment.
+
+Who are the students proposing this project?
+We are a 9th grade science class, and we came up with this idea as part of our study of environmental systems. Did you know that animals can choke on a single piece of trash and die? Plants are also greatly affected by the toxins in plastics. If one plant or animal is affected, it can have major implications for other species as well.
+')
 
 project7 = li.projects.create(
   title: 'Volunteer with kids with disabilities',
   image: 'disabilities-china.jpg' ,
-  description: 'This is the coolest project ever')
+  description: 'What should your class do?
+Organize a big event at your school where everyone picks up trash from the ground.
+
+Why would this make the world a better place?
+Even if each student picks up a single piece of trash, it could have a big impact on cleaning up that environment.
+
+Who are the students proposing this project?
+We are a 9th grade science class, and we came up with this idea as part of our study of environmental systems. Did you know that animals can choke on a single piece of trash and die? Plants are also greatly affected by the toxins in plastics. If one plant or animal is affected, it can have major implications for other species as well.
+')
 
 project8 = jani.projects.create(
   title: 'Re-purpose old furniture or appliances',
   image: 'http://innovationonearth.files.wordpress.com/2012/09/img_06901.jpg' ,
-  description: 'This is the coolest project ever')
+  description: 'What should your class do?
+Organize a big event at your school where everyone picks up trash from the ground.
+
+Why would this make the world a better place?
+Even if each student picks up a single piece of trash, it could have a big impact on cleaning up that environment.
+
+Who are the students proposing this project?
+We are a 9th grade science class, and we came up with this idea as part of our study of environmental systems. Did you know that animals can choke on a single piece of trash and die? Plants are also greatly affected by the toxins in plastics. If one plant or animal is affected, it can have major implications for other species as well.
+')
 
 project9 = tommie.projects.create(
   title: 'Raise money for mosquito nets to prevent malaria',
   image: 'http://www.net4nets.net/images/Net4Nets_Main.jpg' ,
-  description: 'This is the coolest project ever')
+  description: 'What should your class do?
+Organize a big event at your school where everyone picks up trash from the ground.
+
+Why would this make the world a better place?
+Even if each student picks up a single piece of trash, it could have a big impact on cleaning up that environment.
+
+Who are the students proposing this project?
+We are a 9th grade science class, and we came up with this idea as part of our study of environmental systems. Did you know that animals can choke on a single piece of trash and die? Plants are also greatly affected by the toxins in plastics. If one plant or animal is affected, it can have major implications for other species as well.
+')
 
 users = User.all
 projects = Project.all

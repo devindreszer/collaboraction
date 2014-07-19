@@ -7,7 +7,8 @@
     <h3><%= @project.title %></h3>
     <p><%= @project.description %></p>
   </div>
-
+</div>
+<div class="sign-up-list">
   <hr>
   <% if user_signed_in? && (current_user.sign_ups.find_by(project_id: @project.id).present? || current_user.id == @project.user_id) %>
     <%= render "user", joined_users: @joined_users %>
