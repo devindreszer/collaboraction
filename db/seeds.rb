@@ -85,3 +85,12 @@ project9 = tommie.projects.create(
   image: 'http://www.net4nets.net/images/Net4Nets_Main.jpg' ,
   description: 'This is the coolest project ever')
 
+users = User.all
+projects = Project.all
+
+50.times do
+  project = projects.sample
+  user = users.sample
+  project.sign_ups.create!(user: user)
+end
+
